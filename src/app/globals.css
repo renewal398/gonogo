@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+@layer base {
+  :root {
+    --background: 231 67% 94%;
+    --foreground: 231 48% 28%;
+    --card: 231 67% 99%;
+    --card-foreground: 231 48% 28%;
+    --popover: 231 67% 99%;
+    --popover-foreground: 231 48% 28%;
+    --primary: 231 48% 48%;
+    --primary-foreground: 231 67% 99%;
+    --secondary: 231 50% 88%;
+    --secondary-foreground: 231 48% 28%;
+    --muted: 231 50% 88%;
+    --muted-foreground: 231 48% 40%;
+    --accent: 261 35% 58%;
+    --accent-foreground: 231 67% 99%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 231 48% 85%;
+    --input: 231 48% 85%;
+    --ring: 231 48% 48%;
+    --chart-1: 0 72% 51%; /* Red for low scores */
+    --chart-2: 48 96% 53%; /* Yellow for medium scores */
+    --chart-3: 142 71% 45%; /* Green for high scores */
+    --chart-4: 231 48% 48%;
+    --chart-5: 261 35% 58%;
+    --radius: 0.5rem;
+  }
+  .dark {
+    --background: 240 10% 3.9%;
+    --foreground: 210 40% 98%;
+    --card: 240 10% 3.9%;
+    --card-foreground: 210 40% 98%;
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 210 40% 98%;
+    --primary-foreground: 240 5.9% 10%;
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+    --accent: 240 3.7% 15.9%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 240 4.9% 83.9%;
+    --chart-1: 0 72% 61%;
+    --chart-2: 48 96% 63%;
+    --chart-3: 142 71% 55%;
+    --chart-4: 210 40% 98%;
+    --chart-5: 261 45% 68%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
