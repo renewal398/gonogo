@@ -19,7 +19,7 @@ export default function Home() {
         <IdeaAnalyzer />
       </div>
       <footer className="mt-12 py-4">
-        <p className="text-sm text-muted-foreground">Powered by Genkit and Next.js</p>
+        <p className="text-sm text-muted-foreground">in domino confido </p>
       </footer>
     </main>
   );
